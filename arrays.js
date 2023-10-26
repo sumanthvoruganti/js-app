@@ -65,18 +65,53 @@
 
 
 //Program to get Max Element in Array
-function largestnuminarr (arr){
-    let max = arr[0];
-    for (index = 1; index < arr.length; index++){
-        if (arr[index] > max);{
-            max = arr[index];
-        }
-    }
-    return max;
-}
+// function largestnuminarr (arr){
+//     let max = arr[0];
+//     for (index = 1; index < arr.length; index++){
+//         if (arr[index] > max);{
+//             max = arr[index];
+//         }
+//     }
+//     return max;
+// }
 
-var data = [1, 3, 13, 21, 45, 2, 10, 6, 41]
-var result = largestnuminarr(data);
-console.log(result);
+// var data = [1, 3, 13, 21, 45, 2, 10, 6, 41]
+// var result = largestnuminarr(data);
+// console.log(result);
 
 //Program to sort elements in array
+// var sortarr = function (arr) {
+//     for (var i = 0; i < arr.length; i++){
+//         for (var j = i + 1 ; j < arr.length; j++){
+//             if (arr[i] >= arr[j]) {
+//                 var temp = arr[i];
+//                 arr[i] = arr[j];
+//                 arr[j] = temp;
+//             }
+//         }
+//     }
+//     return arr;
+// }
+
+// var data = [10, 3, 6, 78, 12, 29, 59, 11];
+// result = sortarr (data);
+// console.log(result);
+
+
+
+
+//Program to count number of zeros in a array
+function getnumberofzeros(arr){
+    let count = 0;
+    for (index = 0; index < arr.length; index++){
+        if (arr[index] == 0){
+            count++;
+        }
+    }
+    return count;
+}
+
+
+var data = [10, 34, 56, 78, 11, 9, 0, 30, 0, 5, 0];
+result = getnumberofzeros(data);
+console.log("The number of zeros in the array is " + result);
