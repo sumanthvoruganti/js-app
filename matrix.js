@@ -2,7 +2,7 @@
 let r = 2;
 let c = 2;
 const mA = [[1, 2],[3, 4]];
-const mB = [[1, 1],[2, 2]];
+const mB = [[1,-1],[2,-2]];
 const mC = [[],[]];
 for (let i = 0;i < r;i++){
     for (let j = 0;j < c;j++){
